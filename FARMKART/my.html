@@ -1,0 +1,607 @@
+<html>
+<head>
+<title>bootstap </title>
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/int.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+type="text/javascript"></script>
+
+<style type="text/css">
+@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+
+#feedControl {
+margin-top : 10px;
+margin-left: auto;
+margin-right: auto;
+width : 440px;
+font-size: 12px;
+color: #9CADD0;
+}
+</style>
+<script type="text/javascript">
+function load() {
+var feed ="http://feeds.bbci.co.uk/news/world/rss.xml";
+new GFdynamicFeedControl(feed, "feedControl");
+
+}
+google.load("feeds", "1");
+google.setOnLoadCallback(load);
+</script>
+<style>
+.vide{
+    height: 125vh;
+    position: relative;
+	z-index:-1;
+}
+ .vide:before{
+    content: '';
+    position: absolute;
+   display: inline-block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #451c00;
+    z-index: 1;
+    opacity: 0.6;    
+}
+
+
+.msg_box{
+cursor:pointer;
+position:fixed;
+bottom:-5px;
+background:white;
+width:280px;
+z-index: 3;
+border-radius:5px 5px 0px 0px;
+}
+.msg_head{
+	background:#75992E	;
+	padding:15px;
+	color:white;
+	border-radius:5px 5px 0px 0px;
+}
+.msg_body{
+	height:200px;
+	font-size:20px;
+	overflow:auto;
+	overflow-x:hidden;
+}
+.msg_input{
+	border:transparent;
+	border-top:1px solid #bdc3c7;
+	width:100%;
+	padding:5px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.user{
+	cursor:pointer;
+	padding:20px 25px;
+	}
+	
+</style> 
+</head>
+<body>
+<script
+  src="https://code.jquery.com/jquery-2.1.0.min.js"
+  integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
+  crossorigin="anonymous"></script>
+  
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"style="position:absolute;z-index:5;">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-lg-5 col-md-5 col-sm-5 col-xl-5 " style="padding-top:10px;padding-bottom:20px;">
+<h2 style="color:#75992E;font-size:38px;"><b>FARM</b><i class="fa fa-leaf" aria-hidden="true"></i><span style="color:white;font-size:38px;margin-left:0px;">KART</h2>
+<!-- <p style="color:white;font-family:italic;">khet se,khet tk!</p> -->
+
+</div>
+<div class="col-xs-12 col-lg-7 col-md-7 col-sm-7 col-xl-7" style="position:relative;">
+<a href="my.html"><h5 style="color:#75992E;padding-top:25px;padding-bottom:20px;float:left;padding-left:175px;font-size: 20px;">Home</h5></a>
+<a href="#about"><h5 style="color:#75992E;padding-top:25px;padding-bottom:20px;float:left;margin-left:45px;font-size: 20px;">About</h5></a>
+<a href="#aaa"><h5 style="color:#75992E;padding-top:25px;padding-bottom:20px;float:left;margin-left:45px;font-size: 20px;">Contact</h5></a>
+<a href="project.php"><h5 style="color:#75992E;padding-top:25px;padding-bottom:20px;float:left;margin-left:45px;font-size: 20px;">Login</h5></a>
+<i class="fa fa-facebook-official" style="color:#75992E;font-size:10px;padding-top:39px;padding-left:40px;font-size: 20px;"></i>
+<i class="fa fa-flask" aria-hidden="true" style="color:#75992E;font-size:10px;padding-top:20px;padding-left:19px;font-size: 20px;"></i>
+</div>
+</div>
+</div>
+
+
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="position:absolute;z-index:2;">
+<h1 style="color:white;font-size:65px;text-align:center;z-index:1;font-family: 'Open Sans', sans-serif;margin-top: 116px;"><b>NO</b>MIDDELEMAN!</h1>
+<h3 style="color:white;font-size:40px;text-align:center;z-index:1;font-family: 'Open Sans', sans-serif;margin-top: 29px;">farm-grown products</h3>
+<p style="color:white;font-size:30px;text-align:center;z-index:1;font-family: 'Open Sans', sans-serif;margin-top: 40px;">Want to sell directly to buyer.Ok,we are here for you!!!</p>
+<div class="btn-group-variant" style="margin-top: 91px;">
+<button type="button" class="btn btn-default" style="    border: 2px solid #a1a1a1;
+    padding: 17px 48px;
+    background: #75992E;
+    width: 300px;
+    border-radius: 25px;margin-left: 335px;">SEE ALL PRODUCTS</button>
+<button type="button" class="btn btn-default" style="    border: 2px solid #a1a1a1;
+    padding: 17px 48px;
+    background: #75992E;
+    width: 300px;
+    border-radius: 25px;margin-left: 15px;">ABOUT US</button>
+</div>
+
+</div>
+
+
+<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12 col-xl-12 vide" style="padding:0px;position:relative;height:760px;">
+
+            <video  preload = "true" autoplay ="autoplay" loop ="loop" volume="0" poster="pic.jpg" style="width:100%;height:760px;position:relative;">
+
+         
+               <source src=" video/wheat.mp4"type="video/mp4">
+               </video>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:50px;">
+<div class="containerX">
+<div class="row">
+<h2 style="color:#75992E;text-align:center;" id="about"><b>OUR</b><span style="color:black;margin-left:0px;">FEATURES</h2>
+</div>
+</div>
+<div class="containerY">
+<div class="row">
+<span>
+<i class="fa fa-star-o" style="margin-left:645px;"></i>
+<i <i class="fa fa-star-o"></i>
+<i class="fa fa-star-o"></i>
+</span>
+</div>
+</div>
+</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:90px;">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="border-right:3px solid #75992E;border-left:3px solid #75992E">
+<h2 style="color:black;"><i class="fa fa-desktop" style="color:#75992E;font-size:30px;padding-top:20px;transition: all 0.5s;"></i><span style="margin-left:15px;">Sell with best price</span></h2>
+<p style="color:black;text-align:justify;">Kisan market is online agriculture market place, where farmer can sell his products with competitive prices. This is beneficiary to farmers without any mediators in between. This marketplace helps agricultural and rural-based businesses to expand market share through an on-line trading community.</p>
+</div>
+
+<div class="col-md-4" style="border-right:3px solid #75992E">
+<h2 style="color:black;"><i class="fa fa-send" style="color:#75992E;font-size:30px;padding-top:20px;border-radius:100%;"></i><span style="margin-left:15px;">But directly from kisan</span></h2>
+<p style="color:black;text-align:justify;">Buyer can directly purchase products from farmers in kisan market, it benefits both buyer and famers to facilitate convenient market to buy and sale all agriculture related products. Kisan Market does not act as a trader for an agent, nor do we have a vested interest in promoting specific deals.</p>
+</div>
+
+<div class="col-md-4" style="border-right:3px solid #75992E">
+<h2 style="color:black;"><i class="fa fa-gears" style="color:#75992E;font-size:30px;padding-top:20px;border-radius:100%;"></i><span style="margin-left:15px;">Market value</span></h2>
+<p style="color:black;text-align:justify;">Users can get detailed information on the market value of products at national and state level. Information on current bazar rates, commodity rates, weekly markets, average price trend, monthly markets, average commodity arrival trend, weekly price variations, etc. is provided.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:150px;background:#75992E;">
+<div class="container">
+<div class="row">
+<h2 style="color:black;text-align:center;"><b>HOW</b><span style="color:black;margin-left:10px;"><b>IT</b><span style="color:black;margin-left:10px;"><b>WORKS</b></h2>
+
+<div class="containerY" style="position:relative;">
+<div class="row">
+<span>
+<i class="fa fa-star-o" style="margin-left:572px;color:black;"></i>
+<i class="fa fa-star-o" style="color:black;"></i>
+<i class="fa fa-star-o" style="color:black;"></i>
+</span>
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="background:white;">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="position:relative;">
+<img src="img/095.png" class="img-responsive" alt="responsive image" style="height:173.5px;margin-top:40px;margin-left:125px;">
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="position:relative;">
+<img src="img/consumer-icons.png" class="img-responsive" alt="responsive image" style="height:173.5px;margin-top:40px;margin-left:200px;">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid testM">
+<div class="container">
+<div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
+<div class="row">
+<div class="col-md-6 col-xs-12 col-xl-12 col-lg-6 col-sm-6">
+<div class="container-fluid" style="margin-left:143px;">
+<div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
+<div class="row">
+<h3 class="testP">Farmers</h3>
+</div>
+<div class="row">
+<h4 class="testCH"><b>Signup</b></h4>
+</div>
+<div class="row">
+<h4 class="testCH"><b>Add crops</b></h4>
+</div>
+
+<div class="row">
+<h4 class="testCH"><b>Edit crops</b></h4>
+</div>
+
+<div class="row">
+<h4 class="testCH"><b>Connect to customers</b></h4>
+</div>
+
+
+<div class="row">
+<button type="Signup" class="btn btn-default" style="background-color:#75992E;">Submit</button>
+</div>
+</div></div></div>
+
+<div class="col-md-6 col-xs-12 col-xl-12 col-lg-6 col-sm-6">
+<div class="container-fluid" style="margin-left:155px;">
+<div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
+<div class="row"> 		
+<h3 class="testP">Customers</h3>
+</div>
+<div class="row">
+<h4 class="testCH"><b>Signup</b></h4>
+</div>
+<div class="row">
+<h4 class="testCH"><b>Find</b></h4>
+</div>
+
+<div class="row">
+<h4 class="testCH"><b>Best price</b></h4>
+</div>
+
+<div class="row">
+<h4 class="testCH"><b>Contact with farmers</b></h4>
+</div>
+
+<div class="row">
+<button type="Signup" class="btn btn-default" style="background-color:#75992E;">Submit</button>
+</div>
+</div></div></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid">
+<div class="container">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:150px;background:#75992E;">
+<div class="container">
+<div class="row">
+<h2 style="color:black;text-align:center;"><b>OUR</b><span style="color:black;margin-left:10px;"><b>PRODUCTS</b></h2>
+
+<div class="containerY" style="position:relative;">
+<div class="row">
+<span>
+<i class="fa fa-star-o" style="margin-left:572px;color:black;"></i>
+<i class="fa fa-star-o" style="color:black;"></i>
+<i class="fa fa-star-o" style="color:black;"></i>
+</span>
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+<div class="col-md-12 col-xs-12 col-xl-12 col-lg-12 col-sm-12">
+<div class="col-md-3 col-xs-12 col-xl-12 col-lg-3 col-sm-3">
+<div class="row">
+<img src="img/tomato.jpg" class="img-responsive" alt="responsive image" style="margin-top:20px;height:200px;">
+</div>
+<div class="row">
+<img src="img/rice.jpg" class="img-responsive" alt="responsive image" style="margin-top:0px;width:350px;height:200px;">
+</div>
+</div>
+<div class="col-md-3 col-xs-12 col-xl-12 col-lg-3 col-sm-3">
+<div class="row">
+<img src="img/bajra.jpg" class="img-responsive" alt="responsive image" style="margin-top:20px;height:200px;">
+</div>
+<div class="row">
+<img src="img/aloo.jpg" class="img-responsive" alt="responsive image" style="margin-top:0px;width:400px;height:200px;">
+</div>
+</div>
+<div class="col-md-3 col-xs-12 col-xl-12 col-lg-3 col-sm-3">
+<div class="row">
+<img src="img/sugar.jpg" class="img-responsive" alt="responsive image" style="margin-top:20px;height:200px;">
+</div>
+<div class="row">
+<img src="img/wheat.jpg" class="img-responsive" alt="responsive image" style="margin-top:0px;width:350px;height:200px;">
+</div>
+</div>
+<div class="col-md-3 col-xs-12 col-xl-12 col-lg-3 col-sm-3">
+<div class="row">
+<img src="img/onion.jpg" class="img-responsive" alt="responsive image" style="margin-top:20px;height:200px;">
+</div>
+<div class="row">
+<img src="img/bengal.jpg" class="img-responsive" alt="responsive image" style="margin-top:0px;width:400px;height:200px;">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background:url('img/wallpaper.jpg');background-size:100% 100%;height:400px;margin-top:160px;">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="col-md-6">
+<h3 style="color:white;" id="aaa"> Recent from Farmkart</h3>
+</div>
+<div class="col-md-6">
+<h3 style="color:white;"> Contact</h3>
+</div></div></div>
+
+
+<div class="container-fluid" style="background:white;margin-top:20px;height:2.5px;">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+</div></div></div></div>
+<div class="col-md-12">
+<div class="col-md-4">
+<div class="row">
+<div class="row">
+<div class="col-md-4">
+<img src="img/jlp.jpg" class="img-responsive" alt="responsive image" style="height:70px;width:1000%;margin-top:20px;padding-top:15px;margin-left:19px;">
+</div>
+<div class="col-md-8">
+<h5 style="color:white;padding-top:20px;"></h5>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-md-4">
+<img src="img/kl.jpe" class="img-responsive" alt="responsive image" style="height:70px;width:100%;padding-top:10px;">
+</div>
+<div class="col-md-8">
+<h5 style="color:white;"></h5>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4">
+<img src="img/unnamed.png" class="img-responsive" alt="responsive image" style="height:70px;width:100%;padding-top:10px;">
+
+</div>
+<div class="col-md-8">
+<h5 style="color:white;"></h5>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<ul style="color:white;text-align:justify;list-style-type:none">
+<li style="margin-top:10px;"><i class="fa fa-phone" style="color:white;font-size:20px;"></i><span style="margin-left:15px;">0144-2730752</span></li>
+<li style="margin-top:10px;"><i class="fa fa-envelope" style="color:white;font-size:20px;"></i><span style="margin-left:15px;">info@farmkart.com</span></li>
+</ul></div>
+<div class="col-md-5">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14007.907802842587!2d77.372093!3d28.6304529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7335d9fcfd4d9db0!2sJaypee+Institute+of+Information+Technology!5e0!3m2!1sen!2sin!4v1480536459938" width="400" height="300" frameborder="0" style="border:0;margin-top:20px;padding-bottom:10px;" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+</div></div></div>
+
+
+<div class="container-fluid" style="background:#021300;margin-top:0px;height:100;padding:0%;">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="col-md-6">
+<h3 style="color:#75992E;margin-left:10px;">@FARMKART</h3><h5 style="color:#75992E;"> <span style="margin-left:10px;text-align:center;">2016.All right reserved</span></h5>
+</div>
+</div></div>
+</div>
+</div>
+
+
+
+
+<div class="msg_box" style="right:30px;">
+<div class="msg_head">CHAT BOX</div>
+<div class="msg_wrap">
+<div class="msg_body">
+
+<div class="msg">
+<div id="chatlogs" class="msg_font">
+LOADING CHAT PLEASE WAIT...
+</div>
+</div>
+
+<div class="msg_insert">
+</div>
+</div>
+<!-- <div class="msg_footer"><textarea class="msg_input" rows="4">sample<textarea></div> -->
+<div class="msg_footer">
+<form name="form1" id="form1" class="msg_input">
+<input placeholder="name" type="text" name="uname" >
+<textarea  name="msg"></textarea>
+<input type="button" name="send"  onclick="submit1()" value="send"> 
+</form >
+</div>
+</div>
+</div>
+
+
+
+<script>
+
+function submit1()
+			{
+				if(document.forms["form1"]["uname"].value==''||document.forms["form1"]["msg"].value=='')
+				{
+					alert('ALL FIELDS ARE MANDATORY...'); 
+					return;
+				}
+				form1.uname.readOnly=true;
+				form1.uname.style.border='none';
+				var uname=form1.uname.value;
+				var msg=form1.msg.value;
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() 
+				{
+				if (this.readyState==4 && this.status==200) 
+				{
+				 document.getElementById("chatlogs").innerHTML =this.responseText;
+				}
+				};
+				
+				xhttp.open("GET", "insert.php?uname="+form1.uname.value+"&msg="+form1.msg.value, true);
+				xhttp.send();
+			}
+			$(document).ready(function(e){
+			$.ajaxSetup({cache:false});  
+			setInterval(function() {$("#chatlogs").load("logs.php");},2000); 
+			});
+			
+			$('.msg_head').click(function(){
+				$('.msg_wrap').slideToggle('slow');
+				});
+			
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
